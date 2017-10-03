@@ -1,0 +1,124 @@
+<DOCTYPE! HTML>
+<html>
+	<head>
+		 <meta charset="utf-8">
+	     <title>Image Tagging </title>
+	    
+	     <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="mturk.js"></script>
+
+	</head>
+	<body>
+		<div class="col-lg-3"></div>
+		<form class="form-group col-lg-6" id="mturk_form">
+			<h1>How many recognizable people are in this image?</h1>
+			<small>Our definition: if you were tagging people on Facebook, how many people would you tag?</small>
+			<br>
+			<small><em>Note:</em> The accuracy of your count will indicate whether you are rewarded for this task or not.</small>
+
+			<h2>Image 1</h2>
+			<img src="images/people1.jpg" width="100%">
+			<div class="form-group">
+		    	<label for="people1">How many people are in image 1?</label>
+		    	<input type="number" class="form-control" id="people1">
+		  	</div>
+
+		  	<a href="#image2">Next</a>
+			
+			<br>
+
+			<a name="image2"></a>
+			<h2>Image 2</h2>
+			<img src="images/people2.jpg" width="100%">
+		  	<div class="form-group">
+		    	<label for="people2">How many people are in image 2?</label>
+		    	<input type="number" class="form-control" id="people2">
+		  	</div>
+
+			<a href="#image3">Next</a>
+
+
+			<br>
+
+			<a name="image3"></a>
+			<h2>Image 3</h2>
+		  	<img src="images/people3.jpg" width="100%">
+		  	<div class="form-group">
+		    	<label for="people1">How many people are in image 3?</label>
+		    	<input type="number" class="form-control" id="people3">
+		  	</div>
+		  	<a href="#image4">Next</a>
+
+			<br>
+
+			<a name="image4"></a>
+			<h2>Image 4</h2>
+			<img src="images/people4.jpg" width="100%">
+		  	<div class="form-group">
+		    	<label for="people4">How many people are in image 4?</label>
+		    	<input type="number" class="form-control" id="people4">
+		  	</div>
+		  	<a href="#image5">Next</a>
+
+
+			<br>
+
+			<a name="image5"></a>
+			<h2>Image 5</h2>
+			<img src="images/people5.png" width="100%">
+		  	<div class="form-group">
+		    	<label for="people5">How many people are in image 5?</label>
+		    	<input type="number" class="form-control" id="people5">
+		  	</div>
+
+		  	<a href="#image6">Next</a>
+
+		  	
+			<br>
+
+			<a name="image6"></a>
+			<h2>Image 6</h2>
+			<img src="images/people6.jpg" width="100%">
+		  	<div class="form-group">
+		    	<label for="people6">How many people are in image 6?</label>
+		    	<input type="number" class="form-control" id="people6">
+		  	</div>
+		  	<a href="#image7">Next</a>
+
+
+
+			<a name="image7"></a>
+			<h2>Image 7</h2>
+			<img src="images/people7.jpg" width="100%">
+		  	<div class="form-group">
+		    	<label for="people7">How many people are in image 7?</label>
+		    	<input type="number" class="form-control" id="people7">
+		  	</div>
+		  	
+
+			<br>
+			
+		  	<h2>One last question...</h2>
+		  	<div class="form-group">
+		    	<label for="people-feedback">How did you decide how many people were in the images?</label>
+		    	<input type="text" class="form-control" id="people-feedback">
+		  	</div>	
+			<br>
+
+			
+
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		
+	</body>
+
+</html>
