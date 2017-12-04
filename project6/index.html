@@ -57,7 +57,7 @@ $(document).ready(function() {
       $(".piece").css("left", hPiece + "px");
 
 
-      index = parseInt($(".globalpiece").css("left").replace(/[^-\d\.]/g, ''))/50;
+      index = parseInt(globalpiece.css("left").replace(/[^-\d\.]/g, ''))/50;
       if (obstacles[5][index] == 1) {
         stillGoing = false;
         $("#keyPresses").val(numPresses);
@@ -97,7 +97,7 @@ $(document).ready(function() {
           }
         }
       }
-      globalIndex = parseInt($(".globalpiece").css("left").replace(/[^-\d\.]/g, ''))/50;
+      globalIndex = parseInt(globalpiece.css("left").replace(/[^-\d\.]/g, ''))/50;
       if (obstacles[5][globalIndex] == 1 || totalReward == 2 * 10000) {
         stillGoing = false;
         $("#keyPresses").val(numPresses);
@@ -128,7 +128,7 @@ function doSomething(json) {
       } else { 
         globalx = (arr[half-1]);
       }
-      $(".globalpiece").css("left", globalx + "px");
+      globalpiece.css("left", globalx + "px");
 }
 
 function updateBoard() {
