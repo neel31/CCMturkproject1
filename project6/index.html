@@ -113,11 +113,12 @@ function doSomething(json) {
   var arr = []; 
   var globalx = 150;
   var globaly = 250;
+  console.log("beep")
   for (i = 0; i < json["count"]; i++) {
           var data = eval(JSON.stringify(json["results"][i]["data"]));
-          var localship_x = JSON.parse(data)["localship_x"];
-          console.log(localship_x);
-          arr.push(localship_x);
+          var localX = JSON.parse(data)["localX"];
+          console.log(localX);
+          arr.push(localX);
       }
       
       arr.sort();
